@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omni projecct layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        font-weight: bold;
+        display: grid;
+        grid-template-columns: 80px 300px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+        height: 100vh;
+      }
+
+      nav,
+      section,
+      main,
+      aside {
+        padding-top: 24px;
+      }
+
+      menu {
+        grid-column: 2 / -1;
+        background-color: hsl(255, 86%, 63%);
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 0 40px;
+      }
+
+      button {
+        background-color: #5f3dc4;
+        font-size: 16x;
+        font-weight: bold;
+        padding: 8px 12px;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        border: none;
+        cursor: pointer;
+      }
+      button:last-child {
+        background-color: #d6336c;
+        margin-left: auto;
+      }
+
+      nav {
+        grid-row: 1 / -1;
+        background-color: #212529;
+        color: #fff;
+      }
+
+      section {
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: center;
+        background-color: #495057;
+        overflow: scroll;
+      }
+
+      .email {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      section a:link,
+      section a:visited {
+        background-color: #adb5bd;
+        font-size: 20px;
+        padding: 16px 32px;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      main {
+        background-color: #fff;
+      }
+
+      aside {
+        background-color: #adb5bd;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="side-nav">Nav</div>
+    </nav>
+    <menu class="menu-nav">
+      <button href="">New</button>
+      <button href="">Reply</button>
+      <button href="">Forward</button>
+      <button href="">Mark unread</button>
+      <button href="">Trash</button>
+    </menu>
+
+    <section class="section">
+      <div class="email">
+        <a href="">Email 1</a>
+        <a href="">Email 2</a>
+        <a href="">Email 3</a>
+        <a href="">Email 4</a>
+        <a href="">Email 5</a>
+        <a href="">Email 6</a>
+        <a href="">Email 7</a>
+        <a href="">Email 8</a>
+        <a href="">Email 9</a>
+        <a href="">Email 10</a>
+        <a href="">Email 11</a>
+        <a href="">Email 12</a>
+      </div>
+    </section>
+    <main class="menu">Email View</main>
+    <aside class="additional">Additional View</aside>
+  </body>
+</html>

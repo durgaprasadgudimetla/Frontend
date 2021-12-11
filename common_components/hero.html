@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Space design</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box; /* remove padding the the actual width */
+      }
+      body {
+        font-family: "Rubik", sans-serif;
+        font-weight: 400;
+      }
+
+      .hero-btn:link,
+      .hero-btn:visited {
+        text-decoration: none;
+        background-color: #e67e22;
+        padding: 16px 32px;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 12px;
+        color: #fff;
+        display: inline-block;
+      }
+
+      .hero-btn:hover,
+      .hero-btn:active {
+        background-color: #ffd8a8;
+        color: red;
+      }
+      .hero-btn:vi .container {
+        margin: 0 auto;
+        width: 1200px;
+      }
+
+      .header {
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(hero.jpg);
+        height: 100vh;
+        /* background-image: url(hero.jpg); */
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        position: relative;
+      }
+
+      h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 48px;
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 1200px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        font-weight: 700;
+        padding-top: 32px;
+      }
+
+      .header-container {
+        width: 1200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /* top: 100px; */
+        /* left: 155px; */
+        /* width: 50%; */
+        /* background-color: red; */
+      }
+
+      .header-inner-container {
+        /* width: 75%; */
+        width: 50%;
+        /* background-color: blue; */
+      }
+
+      section {
+        padding: 96px 0;
+        /* background-color: #f7f7f7; */
+      }
+
+      h2 {
+        font-size: 44px;
+        margin-bottom: 48px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="container">
+        <div>LOGO</div>
+        <div>NAVIGATION</div>
+      </nav>
+
+      <div class="header-container">
+        <div class="header-inner-container">
+          <h1>A healty meal delivered to your door, every single day</h1>
+          <p>
+            The smart 365-days-per-year food subscription that will make you eat
+            healty algain. Tailored to your personal tastes and nutritional
+            needs
+          </p>
+          <a href="" class="hero-btn">Start eating well</a>
+        </div>
+      </div>
+    </header>
+    <section class="hero--section">
+      <div class="container">
+        <h2>Some random heading</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque quas,
+          minus beatae sapiente debitis voluptatum, laudantium veritatis impedit
+          corrupti officia recusandae fugit, voluptates iure velit! Ad suscipit
+          vitae nobis optio. Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Reiciendis sequi quam earum voluptas eum laboriosam at
+          cupiditate debitis in odio adipisci repudiandae enim ea, sint quos
+          similique! Debitis, facilis dolore?
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
